@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:historica/core/utils/app_assets.dart';
 
 void main() {
   runApp(const Historica());
@@ -9,6 +10,9 @@ class Historica extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+          body: Container(child: Image.asset(Assets.assetsImagesOnBoarding))),
+    );
   }
 }
